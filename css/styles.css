@@ -96,6 +96,16 @@ img {
 .nav-link:focus {
     color: #404bbf;
 }
+.nav-link:target::after {
+    display: block;
+    border-radius: 2px;
+    min-width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    content: "";
+    margin-top: 20px;
+    
+}
 .contact-us {
     font-style: normal; 
     margin-left: auto;   
@@ -136,10 +146,13 @@ img {
 /* main */
 
 .main {
-    background: #2e2f42;
-    padding: 188px 0;    
-
-}    
+    background-color: #2e2f42;
+    padding: 188px 0; 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-width: 1440рх; */
+   }    
 .main-title {
     font-weight: 700;
     font-size: 56px;
@@ -202,6 +215,15 @@ img {
 .advantages-list-item {
     width: calc((100% - 24px * 3) / 4);
 }
+.advantages-list-icon {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
 
 /* section our team */
 
@@ -227,7 +249,22 @@ img {
 }
 .member-role {
     text-align: center;
+    margin-bottom: 8px;
 }
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.team-social-item {
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+}
+
 
 /* section portfolio */
 
@@ -254,6 +291,10 @@ img {
     background: #2e2f42;
     padding: 100px 0;;
 }
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -268,3 +309,18 @@ img {
     color: #f4f4fd;
     max-width: 264px;
 }
+.footer-social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.footer-social-list {
+    gap: 16px;
+}
+.footer-social-item {
+    padding: 8px;
+}
+
