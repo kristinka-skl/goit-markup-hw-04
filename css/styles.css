@@ -69,6 +69,7 @@ img {
 .header {
     background: #fff;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .logo {
     font-family: Raleway, sans-serif;
@@ -97,7 +98,7 @@ img {
     position: relative;
 }
 
-.nav-link.current::before {
+.nav-link.current::after {
     position: absolute;
     left: 0px;
     bottom: -1px;
@@ -159,7 +160,8 @@ img {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
+    max-width: 1440px;
 }    
 .main-title {
     font-weight: 700;
